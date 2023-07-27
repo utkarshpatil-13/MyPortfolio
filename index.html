@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My PortFolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="logo.png" class="logo"> -->
+                <h1 style="font-size: 40px; font-family: cursive;"><span style="color: #ff004f; font-family: Georgia, 'Times New Roman', Times, serifs;">U</span>tkarsh.</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">PortFolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-times" onclick="closemenu()" style="cursor: pointer;"></i>
+                </ul>
+                <i class="fa-solid fa-bars" style="cursor: pointer;" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <!-- <p>Web Developer</p> -->
+                <h1>Hi, I'm <span>Utkarsh Patil</span><br>And I am a<br> Full Stack Developer!</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- About -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="photo2.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Web developer and a android
+                        developer who works with both the
+                        frontend and backend of a website or
+                        application. Provide an end-to-end
+                        service, and can be involved in
+                        projects that involve databases and
+                        building user-facing websites.
+                        </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Web App Developement</li>
+                            <li><span>App Developement</span><br>Building Android Apps</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Bharat Intern - Web Developement</span><br>Developed Web Apps with HTML, CSS and Javascript</li>
+                            <li><span>Bharat Intern - App Developement</span><br>Building Android Apps with SQLite Database and Firebase</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022</span><br>Diploma in Computer Engineering</li>
+                            <li><span>2023*</span><br>BTech. in Computer Science and Engineering (Artificial Intelligence and Machine Learning)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Developement</h2>
+                    <p>Accomplished full-stack
+                        developer with track record of
+                        success in Html, CSS,
+                        JavaScript, Bootstrap,
+                        Tailwind and PHP.
+                        </p>
+                    <a href="">Learn more...</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Developement</h2>
+                    <p>Hands on experience in
+                        developing Android
+                        Applications using Firebase.</p>
+                    <a href="">Learn more...</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-eye-low-vision"></i>
+                    <h2>Computer Vision</h2>
+                    <p>Having a Good knowledge of
+                        in Java, Python, C++.
+                        Experience with OpenCV and
+                        computer Vision tasks like
+                        Object Detection and Tracking</p>
+                    <a href="">Learn more...</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- PortFolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work-1.png" alt="">
+                    <div class="layer">
+                        <h3>ATTENDANCE MANAGEMENT SYSTEM</h3>
+                        <p>An online Attendance Manangement System which is quick and can help to easily mark and maintain students attendance either of a class or a student in a PDF format</p>
+                        <a href="#">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-2.png" alt="">
+                    <div class="layer">
+                        <h3>SPOTIFY APP</h3>
+                        <p>An KK-Exclusive songs playlist same as Spotify</p>
+                        <a href="#">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-3.png" alt="">
+                    <div class="layer">
+                        <h3>CROWD MANAGEMENT AND DISTRIBUTION SYSTEM IN INDIAN LOCAL RAILWAYS </h3>
+                        <p>A System which helps to manage the uneven distribution of people on the railway platform</p>
+                        <a href="#">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> utkarshpatil.it@gmail.com</p>
+                    <p> <i class="fa-solid fa-phone"></i> +91 7020391355</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/utkarsh_3627/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/utkarshpatil-13"><i class="fa-brands fa-github"></i></a>
+                        <a href="linkedin.com/in/utkarsh-patil-3b6a07210/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="Utkarsh Patil.pdf" download class="btn btn2" style="text-align: center;">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>                       
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright &copy 2023 Utkarsh.</p>
+        </div>
+    </div>     
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxLWGAVV2xshcuGjlqDVaBpLtsiEEBuqi8QHC6pLS7_gKvWGORYIDfryoC8nK387rmg/exec';
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg');
+
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message Sent Successfully!";
+                setTimeout(function(){
+                    msg.innerHTML = "";
+                }, 5000);
+                form.reset();
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/6a16da35b6.js" crossorigin="anonymous"></script>
+</html>
+
+
